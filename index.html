@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aptitude Atlas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<div class="globe">🌍</div>
+<h1>Aptitude Atlas</h1>
+
+</div>
+
+<p class="tagline">Discover Your True Career Direction</p>
+
+</header>
+
+<section class="intro">
+
+<h2>Professional Psychological Aptitude Test</h2>
+
+<p>
+Answer 40 scientifically inspired questions to discover your
+personality traits, strengths, and best career paths.
+</p>
+
+<button onclick="startTest()">Start Test</button>
+
+</section>
+
+<section id="quiz" class="hidden">
+
+<h2 id="question"></h2>
+
+<div class="answers">
+
+<button onclick="answer(1)">Strongly Disagree</button>
+<button onclick="answer(2)">Disagree</button>
+<button onclick="answer(3)">Neutral</button>
+<button onclick="answer(4)">Agree</button>
+<button onclick="answer(5)">Strongly Agree</button>
+
+</div>
+
+<div class="progress">
+
+<div id="bar"></div>
+
+</div>
+
+<p id="motivation"></p>
+
+</section>
+
+<section id="payment" class="hidden">
+
+<h2>Unlock Your Full Analysis</h2>
+
+<p>Career matches, personality breakdown and job opportunities.</p>
+
+<button onclick="pay()">Unlock Results</button>
+
+</section>
+
+<section id="results" class="hidden">
+
+<h2>Your Psychological Profile</h2>
+
+<canvas id="chart"></canvas>
+
+<h3 id="career"></h3>
+
+<a id="jobs" target="_blank">Find Global Jobs</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Aptitude Atlas</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
